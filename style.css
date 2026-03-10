@@ -1,45 +1,150 @@
+/* General page style */
+
 body{
 
 font-family: Georgia, serif;
 max-width: 900px;
 margin: auto;
 padding: 40px;
-line-height: 1.6;
+line-height: 1.7;
 color:#333;
+background:#ffffff;
 
 }
 
+
+/* Navigation bar */
+
 nav{
 
-margin-bottom:30px;
+margin-bottom:40px;
 
 }
 
 nav a{
 
-margin-right:20px;
+margin-right:25px;
 font-weight:bold;
+color:#333;
+text-decoration:none;
 
 }
+
+nav a:hover{
+
+color:#0056b3;
+
+}
+
+
+/* Profile photo */
 
 .profile{
 
 width:180px;
-border-radius:6px;
-margin-bottom:20px;
+border-radius:8px;
+margin-bottom:25px;
 
 }
+
+
+/* Main title */
+
+h1{
+
+font-size:32px;
+margin-bottom:35px;
+
+}
+
+
+/* Section titles */
 
 h2{
 
+font-size:22px;
+margin-top:60px;
+margin-bottom:12px;
 border-bottom:1px solid #ddd;
-padding-bottom:5px;
+padding-bottom:6px;
 
 }
+
+
+/* Paragraph spacing */
+
+p{
+
+margin-bottom:16px;
+
+}
+
+
+/* Lists */
+
+ul{
+
+margin-top:10px;
+margin-bottom:30px;
+padding-left:20px;
+
+}
+
+li{
+
+margin-bottom:8px;
+
+}
+
+
+/* Links */
 
 a{
 
 color:#0056b3;
 text-decoration:none;
+
+}
+
+a:hover{
+
+text-decoration:underline;
+
+}
+
+
+/* Horizontal line */
+
+hr{
+
+margin-top:60px;
+margin-bottom:60px;
+border:0;
+border-top:1px solid #eee;
+
+}
+
+
+/* Images */
+
+img{
+
+max-width:100%;
+border-radius:6px;
+margin-top:15px;
+margin-bottom:20px;
+
+}
+
+
+/* Footer */
+
+footer{
+
+margin-top:60px;
+font-size:14px;
+color:#666;
+border-top:1px solid #eee;
+padding-top:20px;
 
 }
