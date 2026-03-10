@@ -1,3 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Project & Consulation</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<nav>
+
+<a href="../index.html">Home</a>
+<a href="Research.html">Research</a>
+<a href="Teaching.html">Teaching</a>
+<a href="Project & Consulation.html">Project & Consulation</a>
+  
+</nav>
+
 <h2>Projects & Consultation</h2>
 
 <ul>
