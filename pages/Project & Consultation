@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>Project & Consulation</title>
+<title>Projects & Consultation</title>
 <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -13,21 +13,19 @@
 <a href="../index.html">Home</a>
 <a href="Research.html">Research</a>
 <a href="Teaching.html">Teaching</a>
-<a href="Project & Consulation.html">Project & Consulation</a>
-  
+<a href="Projects & Consultation.html">Projects & Consultation</a>
+
 </nav>
 
 <h1>Projects & Consultation</h1>
 
 <ul>
 
+<li>
+
 <h2>Asia-Europe Foundation (ASEF), Singapore</h2>
 
-<ul>
-
-<li>
 <strong>Country Informant / Researcher</strong><br>
-Asia-Europe Foundation (ASEF), Singapore<br>
 Jul 2024 – Feb 2025<br><br>
 
 Research and writing of the 
@@ -39,15 +37,13 @@ Conducted research on science and technology diplomacy strategic planning relate
 
 </li>
 
-</ul>
+<br>
+
+<li>
 
 <h2>UNESCO Regional Office in Bangkok</h2>
 
-</ul>
-
-<li>
 <strong>Programme Support / Consultant</strong><br>
-UNESCO Regional Office in Bangkok – Section for Educational Innovation and Skills Development (EISD)<br>
 Bangkok, Thailand<br>
 Dec 2022 – Jan 2024<br><br>
 
@@ -65,7 +61,6 @@ Liu, Y., Ma, W., & Lin, Y. (2023).
 <a href="https://www.unesco.org/en/articles/unesco-and-partners-host-9th-equitable-education-alliance-eea-meeting" target="_blank">
 UNESCO and partners host the 9th Equitable Education Alliance (EEA) Meeting.
 </a>
-UNESCO Bangkok, 21 December 2023.
 </li>
 
 <li>
@@ -73,23 +68,20 @@ Liu, Y., & Ma, W. (2023).
 <a href="https://www.unesco.org/en/articles/summary-report-8th-meeting-equitable-education-alliance-eea-asia" target="_blank">
 Summary Report: The 8th Equitable Education Alliance (EEA) Meeting in Asia.
 </a>
-UNESCO Bangkok, 29 September 2023.
 </li>
 
 <li>
 Liu, Y., & Alisa, K. (2023). 
 <a href="https://bangkok.unesco.org/content/delivering-equity-inclusive-classroom-asia-pacific-recap-6th-eea-meeting-unesco-eef" target="_blank">
-Delivering an Equity-Inclusive Classroom in Asia-Pacific: Recap of the 6th EEA Webinar.
+Delivering an Equity-Inclusive Classroom in Asia-Pacific.
 </a>
-UNESCO Bangkok, 25 March 2023.
 </li>
 
 <li>
-UNESCO Bangkok, Literacy and Lifelong Learning Team. (2023). 
+UNESCO Bangkok, Literacy and Lifelong Learning Team (2023). 
 <a href="https://www.edx.org/learn/education/sdg-academy-equity-and-inclusion-in-education" target="_blank">
-Equity and Inclusion in Education: Online Professional Development Course.
+Equity and Inclusion in Education (edX course).
 </a>
-SDG Academy, edX.
 </li>
 
 </ul>
@@ -97,3 +89,6 @@ SDG Academy, edX.
 </li>
 
 </ul>
+
+</body>
+</html>
