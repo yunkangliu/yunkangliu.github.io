@@ -37,13 +37,14 @@ nav a:hover {
 /* ============================= */
 
 .profile {
-    display: block;
+    float: left;
     width: 180px;
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    margin: 0 auto 25px auto;
+    margin: 0 20px 25px 0; 
     object-fit: cover;
+
 }
 
 /* ============================= */
