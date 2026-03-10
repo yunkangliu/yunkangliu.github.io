@@ -1,4 +1,6 @@
+/* ============================= */
 /* General page style */
+/* ============================= */
 
 body{
 
@@ -13,7 +15,9 @@ background:#ffffff;
 }
 
 
+/* ============================= */
 /* Navigation bar */
+/* ============================= */
 
 nav{
 
@@ -27,6 +31,7 @@ margin-right:25px;
 font-weight:bold;
 color:#333;
 text-decoration:none;
+font-size:16px;
 
 }
 
@@ -37,7 +42,9 @@ color:#0056b3;
 }
 
 
+/* ============================= */
 /* Profile photo */
+/* ============================= */
 
 .profile{
 
@@ -48,22 +55,21 @@ margin-bottom:25px;
 }
 
 
-/* Main title */
+/* ============================= */
+/* Titles */
+/* ============================= */
 
 h1{
 
 font-size:32px;
-margin-bottom:35px;
+margin-bottom:30px;
 
 }
-
-
-/* Section titles */
 
 h2{
 
 font-size:22px;
-margin-top:60px;
+margin-top:50px;
 margin-bottom:12px;
 border-bottom:1px solid #ddd;
 padding-bottom:6px;
@@ -71,7 +77,9 @@ padding-bottom:6px;
 }
 
 
-/* Paragraph spacing */
+/* ============================= */
+/* Paragraph */
+/* ============================= */
 
 p{
 
@@ -80,7 +88,9 @@ margin-bottom:16px;
 }
 
 
+/* ============================= */
 /* Lists */
+/* ============================= */
 
 ul{
 
@@ -97,7 +107,9 @@ margin-bottom:8px;
 }
 
 
+/* ============================= */
 /* Links */
+/* ============================= */
 
 a{
 
@@ -113,7 +125,9 @@ text-decoration:underline;
 }
 
 
+/* ============================= */
 /* Horizontal line */
+/* ============================= */
 
 hr{
 
@@ -125,7 +139,9 @@ border-top:1px solid #eee;
 }
 
 
+/* ============================= */
 /* Images */
+/* ============================= */
 
 img{
 
@@ -137,7 +153,37 @@ margin-bottom:20px;
 }
 
 
+/* ============================= */
+/* Fieldwork layout */
+/* ============================= */
+
+.fieldwork{
+
+display:flex;
+gap:40px;
+margin-top:40px;
+margin-bottom:60px;
+align-items:flex-start;
+
+}
+
+.fieldwork-text{
+
+flex:1;
+
+}
+
+.fieldwork img{
+
+width:320px;
+border-radius:6px;
+
+}
+
+
+/* ============================= */
 /* Footer */
+/* ============================= */
 
 footer{
 
@@ -146,5 +192,33 @@ font-size:14px;
 color:#666;
 border-top:1px solid #eee;
 padding-top:20px;
+
+}
+
+
+/* ============================= */
+/* Mobile responsive */
+/* ============================= */
+
+@media (max-width: 768px){
+
+.fieldwork{
+
+flex-direction:column;
+
+}
+
+.fieldwork img{
+
+width:100%;
+
+}
+
+nav a{
+
+display:inline-block;
+margin-bottom:10px;
+
+}
 
 }
