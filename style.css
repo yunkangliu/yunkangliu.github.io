@@ -2,223 +2,184 @@
 /* General page style */
 /* ============================= */
 
-body{
-
-font-family: Georgia, serif;
-max-width: 900px;
-margin: auto;
-padding: 40px;
-line-height: 1.7;
-color:#333;
-background:#ffffff;
-
+body {
+    font-family: Georgia, serif;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+    line-height: 1.7;
+    color: #333;
+    background: #ffffff;
 }
-
 
 /* ============================= */
 /* Navigation bar */
 /* ============================= */
 
-nav{
-
-margin-bottom:40px;
-
+nav {
+    margin-bottom: 40px;
 }
 
-nav a{
-
-margin-right:25px;
-font-weight:bold;
-color:#333;
-text-decoration:none;
-font-size:16px;
-
+nav a {
+    margin-right: 25px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-nav a:hover{
-
-color:#0056b3;
-
+nav a:hover {
+    color: #0056b3;
 }
-
 
 /* ============================= */
 /* Profile photo */
 /* ============================= */
 
-.profile{
-
-width:180px;
-border-radius:8px;
-margin-bottom:25px;
-
+.profile {
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto 25px auto;
+    object-fit: cover;
 }
-
 
 /* ============================= */
 /* Titles */
 /* ============================= */
 
-h1{
-
-font-size:32px;
-margin-bottom:30px;
-
+h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
 }
 
-h2{
-
-font-size:22px;
-margin-top:50px;
-margin-bottom:12px;
-border-bottom:1px solid #ddd;
-padding-bottom:6px;
-
+h2 {
+    font-size: 22px;
+    margin-top: 50px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 6px;
 }
-
 
 /* ============================= */
 /* Paragraph */
 /* ============================= */
 
-p{
-
-margin-bottom:16px;
-
+p {
+    margin-bottom: 16px;
 }
-
 
 /* ============================= */
 /* Lists */
 /* ============================= */
 
-ul{
-
-margin-top:10px;
-margin-bottom:30px;
-padding-left:20px;
-
+ul {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-left: 20px;
 }
 
-li{
-
-margin-bottom:8px;
-
+li {
+    margin-bottom: 8px;
 }
-
 
 /* ============================= */
 /* Links */
 /* ============================= */
 
-a{
-
-color:#0056b3;
-text-decoration:none;
-
+a {
+    color: #0056b3;
+    text-decoration: none;
 }
 
-a:hover{
-
-text-decoration:underline;
-
+a:hover {
+    text-decoration: underline;
 }
-
 
 /* ============================= */
 /* Horizontal line */
 /* ============================= */
 
-hr{
-
-margin-top:60px;
-margin-bottom:60px;
-border:0;
-border-top:1px solid #eee;
-
+hr {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: 0;
+    border-top: 1px solid #eee;
 }
-
 
 /* ============================= */
 /* Images */
 /* ============================= */
 
-img{
-
-max-width:100%;
-border-radius:6px;
-margin-top:15px;
-margin-bottom:20px;
-
+img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
-
 
 /* ============================= */
-/* Fieldwork layout */
+/* Fieldwork layout - optimized */
 /* ============================= */
 
-.fieldwork{
-
-display:flex;
-gap:40px;
-margin-top:40px;
-margin-bottom:60px;
-align-items:flex-start;
-
+.fieldwork {
+    display: flex;
+    flex-wrap: wrap;          
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    align-items: flex-start;  
 }
 
-.fieldwork-text{
-
-flex:1;
-
+.fieldwork-text {
+    flex: 1 1 300px;          
+    min-width: 250px;         
 }
 
-.fieldwork img{
-
-width:320px;
-border-radius:6px;
-
+.fieldwork img {
+    flex: 0 0 auto;          
+    width: 320px;            
+    max-width: 100%;          
+    height: auto;             
+    border-radius: 6px;
+    display: block;
 }
-
 
 /* ============================= */
 /* Footer */
 /* ============================= */
 
-footer{
-
-margin-top:60px;
-font-size:14px;
-color:#666;
-border-top:1px solid #eee;
-padding-top:20px;
-
+footer {
+    margin-top: 60px;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
 }
-
 
 /* ============================= */
 /* Mobile responsive */
 /* ============================= */
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-.fieldwork{
+    .fieldwork {
+        flex-direction: column; 
+        gap: 20px;              
+    }
 
-flex-direction:column;
+    .fieldwork img {
+        width: 100%;            
+    }
 
-}
+    .fieldwork-text {
+        width: 100%;            
+    }
 
-.fieldwork img{
-
-width:100%;
-
-}
-
-nav a{
-
-display:inline-block;
-margin-bottom:10px;
-
-}
-
+    nav a {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
 }
