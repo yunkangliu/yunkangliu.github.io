@@ -115,6 +115,39 @@ img {
 }
 
 /* ============================= */
+/* Consultation layout - optimized */
+/* ============================= */
+
+.consultation-item {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    align-items: flex-start;
+}
+
+.consultation-text {
+    flex: 1;
+}
+
+.consultation-item img {
+    width: 220px;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.consultation-item{
+    flex-direction: column;
+}
+
+.consultation-item img{
+    width:100%;
+}
+
+/* ============================= */
 /* Fieldwork layout - optimized */
 /* ============================= */
 
