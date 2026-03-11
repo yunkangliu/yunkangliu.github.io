@@ -134,10 +134,15 @@ img {
 
 .consultation img {
     float: left;
-    width: 260px;
-    height: auto;
+    width: 220px;
+    margin: 0 20px 15px 0;
     border-radius: 6px;
-    margin: 0 25px 15px 0;
+}
+
+.consultation::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 /* ============================= */
