@@ -118,31 +118,24 @@ img {
 /* Consultation layout - optimized */
 /* ============================= */
 
+
+
 .consultation {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin-top: 40px;
-    margin-bottom: 60px;
-    align-items: flex-start;
+    margin-bottom: 50px;
 }
 
-.consultation-text {
-    flex: 1 1 300px;
-    min-width: 250px;
+.consultation-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 420px;
+    margin-bottom: 20px;
 }
 
-.consultation img {
-    float: left;
-    width: 220px;
-    margin: 0 20px 15px 0;
+.consultation-images img {
+    width: 100%;
+    height: auto;
     border-radius: 6px;
-}
-
-.consultation::after {
-    content: "";
-    display: block;
-    clear: both;
 }
 
 /* ============================= */
