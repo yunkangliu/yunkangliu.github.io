@@ -26,10 +26,10 @@ nav {
 
 nav .nav-item {
   margin-right: 28px;
-  font-weight: 500;
+  font-weight: 700;    
+  font-size: 19px;     
   color: #444;
   text-decoration: none;
-  font-size: 16px;
   padding-bottom: 6px;
   position: relative;
   transition: all 0.2s ease;
