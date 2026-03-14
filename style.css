@@ -12,24 +12,63 @@ body {
     background: #ffffff;
 }
 
+
 /* ============================= */
-/* Navigation bar */
+/* Navigation bar - Advanced */
 /* ============================= */
 
 nav {
-    margin-bottom: 40px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+  font-family: 'Inter', sans-serif; 
 }
 
-nav a {
-    margin-right: 25px;
-    font-weight: bold;
-    color: #333;
-    text-decoration: none;
-    font-size: 16px;
+nav .nav-item {
+  margin-right: 28px;
+  font-weight: 500;
+  color: #444;
+  text-decoration: none;
+  font-size: 16px;
+  padding-bottom: 6px;
+  position: relative;
+  transition: all 0.2s ease;
 }
 
-nav a:hover {
-    color: #0056b3;
+
+nav .nav-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #1a4f8b; 
+  transition: width 0.3s ease;
+}
+
+nav .nav-item:hover::after {
+  width: 100%;
+}
+
+
+nav .nav-item.active {
+  color: #1a4f8b;
+}
+
+nav .nav-item.active::after {
+  width: 100%;
+}
+
+
+@media (max-width: 768px){
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  nav .nav-item {
+    margin-bottom: 10px;
+  }
 }
 
 /* ============================= */
