@@ -268,3 +268,43 @@ footer {
     vertical-align: middle;
     margin-right: 6px;
 }
+
+
+/* ============================= */
+/* Hero */
+/* ============================= */
+
+.hero {
+  display: flex;
+  align-items: flex-start;  
+  gap: 30px;                
+  margin-bottom: 40px;
+}
+
+.hero-avatar {
+  width: 180px;            
+  height: 180px;
+  border-radius: 50%;       
+  object-fit: cover;
+}
+
+.hero-text {
+  max-width: 700px;         
+}
+
+.hero-text h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.hero-text p {
+  margin: 5px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.welcome {
+  margin-top: 15px;
+  font-style: italic;      
+}
