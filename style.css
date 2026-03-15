@@ -319,6 +319,7 @@ footer {
 }
 
 .welcome {
-  margin-top: 15px;
-  font-style: italic;      
+  margin-top: 25px;          
+  font-style: italic;       
+  line-height: 1.6;
 }
