@@ -112,13 +112,16 @@ My work has appeared as analytical pieces, commentaries, and articles in academi
   
 </p>
 
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <title>Interactive World Map</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <style>
-    #map { height: 500px; width: 100%; }
+    #map { 
+      height: 80vh;  /* fills 80% of viewport height */
+      width: 100%; 
+    }
   </style>
 </head>
 <body>
@@ -128,31 +131,41 @@ My work has appeared as analytical pieces, commentaries, and articles in academi
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
+  // Initialize map
   var map = L.map('map').setView([20, 0], 2);
 
+  // Add OpenStreetMap tiles
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18,
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
 
+  // Locations with marker color
   var locations = [
-    {lat: 37.77, lon: -122.42, name: "San Francisco"},
-    {lat: 48.85, lon: 2.35, name: "Paris"},
-    {lat: 1.29, lon: 103.85, name: "Singapore"},
-    {lat: -33.87, lon: 151.21, name: "Sydney"}
+    {lat: 37.77, lon: -122.42, name: "San Francisco", color: "red"},
+    {lat: 48.85, lon: 2.35, name: "Paris", color: "orange"},
+    {lat: 1.29, lon: 103.85, name: "Singapore", color: "red"},
+    {lat: -33.87, lon: 151.21, name: "Sydney", color: "orange"}
   ];
 
+  // Add markers
   locations.forEach(function(loc){
     L.circleMarker([loc.lat, loc.lon], {
       radius: 8,
-      fillColor: "red",
+      fillColor: loc.color,
       color: "#fff",
       weight: 1,
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map)
-      .bindPopup(loc.name);
+      .bindPopup(loc.name)
+      .bindTooltip(loc.name, {permanent: false, direction: 'top'});
   });
+
+  // Optional: zoom to fit all markers
+  var bounds = locations.map(loc => [loc.lat, loc.lon]);
+  map.fitBounds(bounds);
+
 </script>
 
 
