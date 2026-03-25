@@ -111,62 +111,41 @@ My work has appeared as analytical pieces, commentaries, and articles in academi
 </ul>
   
 </p>
-
+  
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Interactive World Map</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <meta charset="UTF-8">
+  <title>Responsive Visitor Globe</title>
   <style>
-    #map { 
-      height: 80vh;  /* fills 80% of viewport height */
-      width: 100%; 
+    /* Container for the ClustrMaps globe */
+    #clustrmap-container {
+      width: 100%;       /* fill the page width */
+      max-width: 900px;  /* optional max width */
+      height: 500px;     /* desired height */
+      margin: 0 auto;    /* center the globe */
+    }
+
+    /* Make the script inside scale to container */
+    #clustr_globe {
+      width: 100% !important;
+      height: 100% !important;
+      display: block;
     }
   </style>
 </head>
 <body>
 
-<h2>My Interactive Map</h2>
-<div id="map"></div>
+<h2>Visitor Map</h2>
+<p>Hello, world!</p>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script>
-  // Initialize map
-  var map = L.map('map').setView([20, 0], 2);
-
-  // Add OpenStreetMap tiles
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 18,
-    attribution: '&copy; OpenStreetMap contributors'
-  }).addTo(map);
-
-  // Locations with marker color
-  var locations = [
-    {lat: 37.77, lon: -122.42, name: "San Francisco", color: "red"},
-    {lat: 48.85, lon: 2.35, name: "Paris", color: "orange"},
-    {lat: 1.29, lon: 103.85, name: "Singapore", color: "red"},
-    {lat: -33.87, lon: 151.21, name: "Sydney", color: "orange"}
-  ];
-
-  // Add markers
-  locations.forEach(function(loc){
-    L.circleMarker([loc.lat, loc.lon], {
-      radius: 8,
-      fillColor: loc.color,
-      color: "#fff",
-      weight: 1,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map)
-      .bindPopup(loc.name)
-      .bindTooltip(loc.name, {permanent: false, direction: 'top'});
-  });
-
-  // Optional: zoom to fit all markers
-  var bounds = locations.map(loc => [loc.lat, loc.lon]);
-  map.fitBounds(bounds);
-
-</script>
+<!-- Container for the ClustrMaps globe -->
+<div id="clustrmap-container">
+  <script type="text/javascript" 
+          id="clstr_globe" 
+          src="//clustrmaps.com/globe.js?d=lbMo6227jw6Oo8gaidO50mcAp6WSGPPo0wO3YZtns1A">
+  </script>
+</div>
 
 
 </body>
