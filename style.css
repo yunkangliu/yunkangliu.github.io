@@ -80,7 +80,7 @@ nav .nav-item.active::after {
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: 20%;
+    object-position: 10%;
     display: block;
     margin: 0 auto;
 }
