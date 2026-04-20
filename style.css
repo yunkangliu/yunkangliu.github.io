@@ -80,7 +80,7 @@ nav .nav-item.active::after {
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center;
+    object-position: 50%;
 }
 /* ============================= */
 /* Titles */
