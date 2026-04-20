@@ -81,6 +81,8 @@ nav .nav-item.active::after {
     border-radius: 50%;
     object-fit: cover;
     object-position: 50% 8%;
+    display: block;
+    margin: 0 auto 30px auto;
 }
 /* ============================= */
 /* Titles */
