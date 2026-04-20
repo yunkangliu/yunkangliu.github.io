@@ -76,11 +76,11 @@ nav .nav-item.active::after {
 /* ============================= */
 
 .profile {
-    width: 240px;
-    height: 240px;
+    width: 320px;   
+    height: 320px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: 50% 8%;
+    object-position: 50% 10%; 
     display: block;
     margin: 0 auto 30px auto;
 }
