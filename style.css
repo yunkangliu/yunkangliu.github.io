@@ -75,10 +75,13 @@ nav .nav-item.active::after {
 /* Profile photo */
 /* ============================= */
 
-.profile{width:180px;
-         border-radius:8px; 
-         margin-bottom:25px; 
-        }
+.profile {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
 /* ============================= */
 /* Titles */
 /* ============================= */
