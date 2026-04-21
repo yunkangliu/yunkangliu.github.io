@@ -78,7 +78,7 @@ nav .nav-item.active::after {
 .profile {
     width: 320px;   
     height: 320px;
-    border-radius: 70%;
+    border-radius: 10%;
     object-fit: cover;
     object-position: 50% 0%; 
     display: block;
