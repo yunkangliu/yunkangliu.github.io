@@ -299,11 +299,13 @@ footer {
   margin-bottom: 40px;
 }
 
+
 .hero-avatar {
   width: 180px;            
   height: 180px;
   border-radius: 50%;       
   object-fit: cover;
+  object-position: 50% 10%;  
 }
 
 .hero-text {
