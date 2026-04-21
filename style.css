@@ -305,7 +305,7 @@ footer {
   height: 180px;
   border-radius: 50%;       
   object-fit: cover;
-  object-position: 50% 10%;  
+  object-position: 50% 10% !important;
 }
 
 .hero-text {
