@@ -78,8 +78,8 @@ nav .nav-item.active::after {
 .profile {
     width: 320px;   
     height: 320px;
-    border-radius: 10%;
-    object-fit: cover;
+    border-radius: 50%;
+    object-fit: contain;
     object-position: 50% 0%; 
     display: block;
     margin: 0 auto 30px auto;
