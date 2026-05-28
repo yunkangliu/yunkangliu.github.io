@@ -1,14 +1,8 @@
 function initGlobe() {
   const container = document.getElementById('globeViz');
-  const loading = document.getElementById('loading');
-
-  if (!container) {
-    console.error("globeViz not found");
-    return;
-  }
 
   if (typeof Globe !== "function") {
-    loading.innerText = "Globe failed to load (CDN issue)";
+    console.error("Globe not loaded");
     return;
   }
 
@@ -21,8 +15,6 @@ function initGlobe() {
 
   world.controls().autoRotate = true;
   world.controls().autoRotateSpeed = 0.6;
-
-  loading.style.display = 'none';
 
   let points = [];
 
@@ -50,15 +42,10 @@ function initGlobe() {
       .pointAltitude(d => d.size)
       .pointColor(d => d.color);
 
-    points.forEach(p => p.life -= 0.03);
-    points = points.filter(p => p.life > 0);
+    points = points.filter(p => (p.life -= 0.03) > 0);
   }
 
   setInterval(addPoint, 800);
 }
 
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", initGlobe);
-} else {
-  initGlobe();
-}
+document.addEventListener("DOMContentLoaded", initGlobe);
