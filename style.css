@@ -330,28 +330,4 @@ footer {
 }
 
 
-/* ============================= */
-/* Container for the small globe */
-/* ============================= */
 
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  background: #ffffff;
-  overflow: hidden;
-}
-
-/* globe container */
-#globeViz {
-  width: 100vw;
-  height: 100vh;
-}
-
-/* fix iPhone viewport bug */
-@supports (-webkit-touch-callout: none) {
-  #globeViz {
-    height: -webkit-fill-available;
-  }
-}
