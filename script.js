@@ -12,6 +12,7 @@ function initGlobe() {
     .showAtmosphere(true)
     .atmosphereColor('#87ceeb')
     .atmosphereAltitude(0.25);
+  world.pointOfView({ altitude: 2.2 });
 
   world.controls().autoRotate = true;
   world.controls().autoRotateSpeed = 0.6;
