@@ -335,15 +335,14 @@ footer {
 /* ============================= */
 
 html, body {
-  margin: 0 !important;
-  padding: 0 !important;
-  height: 100% !important;
-  background: #ffffff !important;
-  overflow: auto !important;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #ffffff;
+  overflow: auto;
 }
 
 #globeViz {
-  width: 100% !important;
-  height: 100vh !important;
-  display: block;
+  width: 100%;
+  height: 100vh;
 }
