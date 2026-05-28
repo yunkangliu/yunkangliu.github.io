@@ -2,20 +2,21 @@ function initGlobe() {
   const container = document.getElementById('globeViz');
 
   if (typeof Globe !== "function") {
-    console.error("Globe not loaded");
+    console.error("Globe failed to load");
     return;
   }
 
   const world = Globe()(container)
-    .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-night.jpg')
-    .backgroundColor('#0b0f19')
+    .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
+    .backgroundColor('#ffffff')
     .showAtmosphere(true)
-    .atmosphereColor('lightskyblue')
+    .atmosphereColor('#87ceeb')
     .atmosphereAltitude(0.25);
 
   world.controls().autoRotate = true;
   world.controls().autoRotateSpeed = 0.6;
 
+  // 🌍 visitor simulation
   let points = [];
 
   const regions = [
@@ -24,7 +25,8 @@ function initGlobe() {
     { lat: 35.6762, lng: 139.6503 },
     { lat: 1.3521, lng: 103.8198 },
     { lat: -33.8688, lng: 151.2093 },
-    { lat: 13.7563, lng: 100.5018 }
+    { lat: 13.7563, lng: 100.5018 },
+    { lat: 28.6139, lng: 77.2090 }
   ];
 
   function addPoint() {
