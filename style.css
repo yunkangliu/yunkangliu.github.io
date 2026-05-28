@@ -337,7 +337,7 @@ footer {
 html, body {
   margin: 0;
   height: 100%;
-  background: radial-gradient(circle at center, #1b2233, #0b0f19);
+  background: #ffffff;
   overflow: hidden;
 }
 
