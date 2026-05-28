@@ -2,13 +2,17 @@ function initGlobe() {
   const container = document.getElementById('globeViz');
   const loading = document.getElementById('loading');
 
-  if (!window.Globe) {
-    loading.innerText = "Globe failed to load";
+  if (!container) {
+    console.error("globeViz not found");
     return;
   }
 
-  const world = Globe()
-    (container)
+  if (typeof Globe !== "function") {
+    loading.innerText = "Globe failed to load (CDN issue)";
+    return;
+  }
+
+  const world = Globe()(container)
     .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-night.jpg')
     .backgroundColor('#0b0f19')
     .showAtmosphere(true)
@@ -20,7 +24,6 @@ function initGlobe() {
 
   loading.style.display = 'none';
 
-  // 🌍 visitor simulation
   let points = [];
 
   const regions = [
@@ -54,6 +57,8 @@ function initGlobe() {
   setInterval(addPoint, 800);
 }
 
-window.addEventListener('load', () => {
-  setTimeout(initGlobe, 300);
-});
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initGlobe);
+} else {
+  initGlobe();
+}
