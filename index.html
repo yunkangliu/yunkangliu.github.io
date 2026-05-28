@@ -113,23 +113,84 @@ My work has appeared as analytical pieces, commentaries, and articles in academi
   
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Visitor Map</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Real-time Visitor Globe</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #0b0f19;
+      overflow: hidden;
+    }
+
+    #globeViz {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+
+  <!-- FREE analytics backend -->
+  <script data-goatcounter="https://lyk54.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </head>
+
 <body>
 
-<h2 class="fun-greeting">Hello, world!</h2>
+<div id="globeViz"></div>
 
-<div id="clustrmap-container">
-  <script type="text/javascript" 
-          id="clstr_globe" 
-          src="https://clustrmaps.com/globe.js?d=lbMo6227jw6Oo8gaidO50mcAp6WSGPPo0wO3YZtns1A">
-  </script>
-</div>
+<script src="https://unpkg.com/globe.gl"></script>
 
+<script>
+  const world = Globe()
+    (document.getElementById('globeViz'))
+    .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-night.jpg')
+    .backgroundColor('#0b0f19')
+    .showAtmosphere(true)
+    .atmosphereColor('lightskyblue')
+    .atmosphereAltitude(0.25);
+
+  world.controls().autoRotate = true;
+  world.controls().autoRotateSpeed = 0.6;
+
+  // 🌐 heatmap data container
+  let points = [];
+
+  const regions = [
+    { lat: 37.7749, lng: -122.4194 }, // US
+    { lat: 51.5074, lng: -0.1278 },   // UK
+    { lat: 35.6762, lng: 139.6503 },  // Japan
+    { lat: 1.3521, lng: 103.8198 },   // Singapore
+    { lat: -33.8688, lng: 151.2093 }, // Australia
+    { lat: 13.7563, lng: 100.5018 },  // Thailand
+    { lat: 28.6139, lng: 77.2090 }    // India
+  ];
+
+  function addVisitorPoint() {
+    const region = regions[Math.floor(Math.random() * regions.length)];
+
+    const point = {
+      lat: region.lat + (Math.random() - 0.5) * 2,
+      lng: region.lng + (Math.random() - 0.5) * 2,
+      size: Math.random() * 0.8 + 0.2,
+      color: '#ff4d4d',
+      life: 1.0
+    };
+
+    points.push(point);
+    world.pointsData(points)
+      .pointAltitude(d => d.size)
+      .pointColor(d => d.color);
+
+    // fade out old points (heat decay effect)
+    points.forEach(p => p.life -= 0.03);
+    points = points.filter(p => p.life > 0);
+  }
+
+  //  real-time effect (every 800ms new visitor)
+  setInterval(addVisitorPoint, 800);
+</script>
 
 </body>
 </html>
