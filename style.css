@@ -333,16 +333,16 @@ footer {
 /* visitor-map */
 /* ============================= */
 
-#visitor-map {
-  width: 180px;
-  height: 180px;
-  margin: 40px auto;
-}
-
-footer {
+.site-footer {
   text-align: center;
   margin-top: 60px;
-  padding-bottom: 40px;
+  padding: 40px 0;
 }
 
+.visitor-globe {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
