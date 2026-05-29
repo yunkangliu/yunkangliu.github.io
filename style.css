@@ -339,11 +339,13 @@ footer {
   padding: 40px 0;
 }
 
-.globe-wrapper {
-  width: 120px;     
-  height: 120px;
-  margin: 0 auto;
+.visitor-map-img {
+  width: 140px;     
+  height: auto;
+  border-radius: 8px; 
+  transition: transform 0.2s ease;
+}
 
-  transform: scale(0.9);   
-  transform-origin: center;
+.visitor-map-img:hover {
+  transform: scale(1.05);
 }
