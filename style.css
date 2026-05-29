@@ -339,13 +339,15 @@ footer {
   padding: 40px 0;
 }
 
-.visitor-map-img {
+.visitor-map {
   width: 140px;     
   height: auto;
-  border-radius: 8px; 
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
   transition: transform 0.2s ease;
 }
 
-.visitor-map-img:hover {
+.visitor-map:hover {
   transform: scale(1.05);
 }
