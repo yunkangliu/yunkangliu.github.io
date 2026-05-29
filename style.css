@@ -333,16 +333,17 @@ footer {
 /* visitor-map */
 /* ============================= */
 
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  font-family: Georgia, serif;
+  color: #333;
+}
+
+/* footer container */
 .site-footer {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 80px;
   padding: 40px 0;
 }
-
-.visitor-globe {
-  width: 180px;
-  height: 180px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
