@@ -313,8 +313,11 @@ footer {
 }
 
 .hero-text {
-  max-width: 600px;         
+    flex: 1;
+    min-width: 0;
+    max-width: none;
 }
+
 .hero-text h1 {
   margin: 0;
   font-size: 28px;
@@ -410,8 +413,8 @@ body > h2 {
 /* Mobile Responsive */
 /* ============================= */
 
-@media (max-width: 768px) {
 
+@media (max-width: 768px) {
     body {
         padding: 20px 18px;
     }
@@ -423,11 +426,13 @@ body > h2 {
     }
 
     .hero-avatar {
-        width: 150px;
-        height: 150px;
+        width: 140px;
+        height: 140px;
     }
 
     .hero-text {
         width: 100%;
+        max-width: none;
     }
 }
+
