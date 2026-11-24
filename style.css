@@ -551,18 +551,17 @@ body > p {
     margin-bottom: 20px;
 }
 
-/* 6. Research interests */
 
-body > ul:not(.contact-list) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    list-style: none;
-    padding: 0;
+/* 6. Research interests - homepage only */
+
+.home-page > ul:not(.contact-list) {
+    display: block;
+    list-style: disc;
+    padding-left: 25px;
     margin-top: 20px;
 }
 
-body > ul:not(.contact-list) li {
+.home-page > ul:not(.contact-list) li {
     background: transparent;
     color: #424d59;
     border: none;
