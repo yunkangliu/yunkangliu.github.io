@@ -1,12 +1,16 @@
+
+
 /* ============================= */
 /* General page style */
 /* ============================= */
 
 body {
     font-family: Georgia, serif;
-    max-width: 900px;
-    margin: auto;
-    padding: 40px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 35px 5vw;
+    box-sizing: border-box;
     line-height: 1.7;
     color: #333;
     background: #ffffff;
