@@ -563,13 +563,13 @@ body > ul:not(.contact-list) {
 }
 
 body > ul:not(.contact-list) li {
-    background: #f2f5f8;
-    color: #294b6b;
-    border: 1px solid #e3eaf1;
-    border-radius: 5px;
-    padding: 9px 15px;
-    font-size: 14px;
-    margin: 0;
+    background: transparent;
+    color: #424d59;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 /* 7. Links */
@@ -654,4 +654,17 @@ a:hover {
     }
 }
 
+/* Remove grey backgrounds from homepage sections */
+
+body,
+body > *,
+.hero,
+.hero-text,
+.contact-list,
+.contact-list li,
+body > ul:not(.contact-list),
+body > ul:not(.contact-list) li {
+    background-color: #ffffff;
+    box-shadow: none;
+}
 
