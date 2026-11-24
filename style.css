@@ -4,6 +4,7 @@
 /* General page style */
 /* ============================= */
 
+
 body {
     font-family: Georgia, serif;
     width: 100%;
@@ -15,7 +16,6 @@ body {
     color: #333;
     background: #ffffff;
 }
-
 
 /* ============================= */
 /* Navigation bar - Advanced */
